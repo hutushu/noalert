@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoAlert</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+<body>
+  <div id="app">Loading...</div>
+  <nav>
+    <a href="/en/">Home</a>
+    <a href="#/AlertRules/">Alert Rules</a>
+    <a href="/">中文</a>
+  <!-- <a href="#/alertto/">告警推送</a> -->
+  </nav>
+
+  <script>
+    window.$docsify = {
+      coverpage: true,
+      onlyCover: true,
+      loadSidebar: true,
+      subMaxLevel: 6,
+      loadNavbar: true,
+      search: {
+        maxAge: 86400000,  //一天
+        paths: ['/en/AlertRules/','/en/alertto/'],
+        depth: 6 
+      },
+      name: 'NoAlert',
+      repo: 'https://gitee.com/aniseed/prometheus-alerts',
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script>
+  
+</body>
+</html>
